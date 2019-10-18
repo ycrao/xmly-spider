@@ -26,7 +26,13 @@ ffmpeg -i mangzhong.m4a -acodec mp3 -ac 2 -ab 192k mangzhong.mp3
 使用 `m4a2mp3` 脚本批量处理文件夹的命令为：
 
 ```bash
-sudo ./m4a2mp3 /path/to/m4a/audio/files/directory/
+./m4a2mp3 /path/to/m4a/audio/files/directory/
+```
+
+使用 `mutagen` 附带的 `mid3v2` 命令行工具，添加 `mp3` 元数据命令：
+
+```bash
+cp mangzhong.mp3 music_mangzhong.mp3 && mid3v2 music_mangzhong.mp3 -a '音阙视听/赵方婧' -A '芒种' -t '芒种' -p 'mangzhong_800_800.jpg' -g 'Pop' -y '2019-06-06'
 ```
 
 参考资料：
@@ -36,3 +42,5 @@ sudo ./m4a2mp3 /path/to/m4a/audio/files/directory/
 - https://ffmpeg.org/download.html
 - https://github.com/feixiao/ffmpeg
 - https://github.com/wks/chineseid3fix
+- https://www.jianshu.com/p/ed39a9ffea8e
+- https://stackoverflow.com/questions/42231932/writing-id3-tags-using-easyid3
