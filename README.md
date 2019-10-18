@@ -44,3 +44,4 @@ cp mangzhong.mp3 music_mangzhong.mp3 && mid3v2 music_mangzhong.mp3 -a '音阙视
 - https://github.com/wks/chineseid3fix
 - https://www.jianshu.com/p/ed39a9ffea8e
 - https://stackoverflow.com/questions/42231932/writing-id3-tags-using-easyid3
+- https://mutagen.readthedocs.io/en/latest/man/mid3v2.html
