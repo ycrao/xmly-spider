@@ -8,6 +8,10 @@ import requests
 import hashlib
 import random
 
+"""
+参考来源：https://github.com/i-sync/ximalaya
+"""
+
 
 '''下载并写入文件'''
 def down_file(file_name, url):
